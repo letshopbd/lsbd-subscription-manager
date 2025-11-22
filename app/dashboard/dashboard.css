@@ -514,8 +514,7 @@
 }
 
 @keyframes spin {
-```
-    to {
+    ``` to {
         transform: rotate(360deg);
     }
 }
@@ -732,9 +731,12 @@
     background: var(--bg-card);
     width: 100%;
     max-width: 500px;
-    max-height: 90vh; /* Limit height */
-    display: flex; /* Enable flex layout */
-    flex-direction: column; /* Stack children */
+    max-height: 90vh;
+    /* Limit height */
+    display: flex;
+    /* Enable flex layout */
+    flex-direction: column;
+    /* Stack children */
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-xl);
     animation: slideUp 0.3s ease;
@@ -746,7 +748,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-shrink: 0; /* Prevent header from shrinking */
+    flex-shrink: 0;
+    /* Prevent header from shrinking */
 }
 
 .modal-header h3 {
@@ -773,7 +776,8 @@
 
 .modal-form {
     padding: 1.5rem;
-    overflow-y: auto; /* Enable scrolling for form content */
+    overflow-y: auto;
+    /* Enable scrolling for form content */
 }
 
 .form-grid {
@@ -815,7 +819,8 @@
     gap: 1rem;
     background: var(--bg-secondary);
     border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-    flex-shrink: 0; /* Prevent footer from shrinking */
+    flex-shrink: 0;
+    /* Prevent footer from shrinking */
 }
 
 @keyframes slideUp {
@@ -859,9 +864,9 @@
     .entries-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .modal-content {
-        max-height: 95vh; /* More height on mobile */
+        max-height: 95vh;
+        /* More height on mobile */
     }
 }
-```
