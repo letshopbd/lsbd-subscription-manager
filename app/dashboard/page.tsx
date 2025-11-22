@@ -296,14 +296,20 @@ Thank you for choosing *LSBD*.`;
 
                                 <div className="entry-actions">
                                     <button
-                                        onClick={() => handleEdit(entry)}
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            handleEdit(entry);
+                                        }}
                                         className="btn-icon btn-edit"
                                         title="Edit"
                                     >
                                         ✏️
                                     </button>
                                     <button
-                                        onClick={() => handleDelete(entry.id)}
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            handleDelete(entry.id);
+                                        }}
                                         className="btn-icon btn-delete"
                                         title="Delete"
                                     >
