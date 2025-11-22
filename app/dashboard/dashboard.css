@@ -341,402 +341,9 @@
     background: var(--bg-card);
     width: 100%;
     max-width: 500px;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-xl);
-    animation: slideUp 0.3s ease;
-}
-
-.modal-header {
-    padding: 1.5rem;
-    border-bottom: 1px solid var(--border-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.modal-header h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin: 0;
-}
-
-.modal-close {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color: var(--text-secondary);
-    cursor: pointer;
-    padding: 0.5rem;
-    line-height: 1;
-    border-radius: var(--radius-sm);
-}
-
-.modal-close:hover {
-    background: var(--bg-secondary);
-    color: var(--text-primary);
-}
-
-.modal-form {
-    padding: 1.5rem;
-}
-
-.form-grid {
-    display: grid;
-    gap: 1rem;
-}
-
-.input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.input-label {
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: var(--text-secondary);
-}
-
-.input-field {
-    padding: 0.75rem;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-md);
-    font-size: 0.95rem;
-    transition: all 0.2s;
-}
-
-.input-field:focus {
-    border-color: var(--primary-500);
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
-}
-
-.modal-actions {
-    padding: 1.5rem;
-    border-top: 1px solid var(--border-color);
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    background: var(--bg-secondary);
-    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-}
-
-@keyframes slideUp {
-    font-weight: 600;
-}
-
-.date-value {
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--text-primary);
-}
-
-.date-divider {
-    color: var(--text-tertiary);
-    font-size: 1.2rem;
-    opacity: 0.5;
-}
-
-/* Actions */
-.entry-actions {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-sm);
-    margin-top: var(--spacing-sm);
-}
-
-.btn-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.6rem;
-    border-radius: var(--radius-md);
-    border: 1px solid var(--border-color);
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.2s;
-    font-size: 1.1rem;
-}
-
-.btn-edit {
-    color: var(--primary-600);
-    border-color: var(--primary-200);
-    background: var(--primary-50);
-}
-
-.btn-edit:hover {
-    background: var(--primary-100);
-    border-color: var(--primary-300);
-}
-
-.btn-delete {
-    color: #ef4444;
-    border-color: #fecaca;
-    background: #fef2f2;
-}
-
-.btn-delete:hover {
-    background: #fee2e2;
-    border-color: #fca5a5;
-}
-
-/* Empty State */
-.empty-state {
-    text-align: center;
-    padding: 4rem 2rem;
-    background: var(--bg-card);
-    border-radius: var(--radius-lg);
-    border: 1px dashed var(--border-color);
-    margin-top: 2rem;
-}
-
-.empty-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    opacity: 0.5;
-}
-
-/* Loading */
-.loading-state {
-    text-align: center;
-    padding: 4rem;
-    color: var(--text-secondary);
-}
-
-.spinner {
-    width: 40px;
-    height: 40px;
-    border: 3px solid var(--border-color);
-    border-top-color: var(--primary-500);
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    margin: 0 auto 1rem;
-}
-
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/* Modal */
-.modal-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(4px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    padding: 1rem;
-}
-
-.modal-content {
-    background: var(--bg-card);
-    width: 100%;
-    max-width: 500px;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-xl);
-    animation: slideUp 0.3s ease;
-}
-
-.modal-header {
-    padding: 1.5rem;
-    border-bottom: 1px solid var(--border-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.modal-header h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin: 0;
-}
-
-.modal-close {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color: var(--text-secondary);
-    cursor: pointer;
-    padding: 0.5rem;
-    line-height: 1;
-    border-radius: var(--radius-sm);
-}
-
-.modal-close:hover {
-    background: var(--bg-secondary);
-    color: var(--text-primary);
-}
-
-.modal-form {
-    padding: 1.5rem;
-}
-
-.form-grid {
-    display: grid;
-    gap: 1rem;
-}
-
-.input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.input-label {
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: var(--text-secondary);
-}
-
-.input-field {
-    padding: 0.75rem;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-md);
-    font-size: 0.95rem;
-    transition: all 0.2s;
-}
-
-.input-field:focus {
-    border-color: var(--primary-500);
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
-}
-
-.modal-actions {
-    padding: 1.5rem;
-    border-top: 1px solid var(--border-color);
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    background: var(--bg-secondary);
-    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-}
-
-@keyframes slideUp {
-    font-weight: 600;
-}
-
-.date-value {
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--text-primary);
-}
-
-.date-divider {
-    color: var(--text-tertiary);
-    font-size: 1.2rem;
-    opacity: 0.5;
-}
-
-/* Actions */
-.entry-actions {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-sm);
-    margin-top: var(--spacing-sm);
-}
-
-.btn-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.6rem;
-    border-radius: var(--radius-md);
-    border: 1px solid var(--border-color);
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.2s;
-    font-size: 1.1rem;
-}
-
-.btn-edit {
-    color: var(--primary-600);
-    border-color: var(--primary-200);
-    background: var(--primary-50);
-}
-
-.btn-edit:hover {
-    background: var(--primary-100);
-    border-color: var(--primary-300);
-}
-
-.btn-delete {
-    color: #ef4444;
-    border-color: #fecaca;
-    background: #fef2f2;
-}
-
-.btn-delete:hover {
-    background: #fee2e2;
-    border-color: #fca5a5;
-}
-
-/* Empty State */
-.empty-state {
-    text-align: center;
-    padding: 4rem 2rem;
-    background: var(--bg-card);
-    border-radius: var(--radius-lg);
-    border: 1px dashed var(--border-color);
-    margin-top: 2rem;
-}
-
-.empty-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    opacity: 0.5;
-}
-
-/* Loading */
-.loading-state {
-    text-align: center;
-    padding: 4rem;
-    color: var(--text-secondary);
-}
-
-.spinner {
-    width: 40px;
-    height: 40px;
-    border: 3px solid var(--border-color);
-    border-top-color: var(--primary-500);
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    margin: 0 auto 1rem;
-}
-
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/* Modal */
-.modal-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(4px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    padding: 1rem;
-}
-
-.modal-content {
-    background: var(--bg-card);
-    width: 100%;
-    max-width: 500px;
     max-height: 90vh;
-    /* Limit height */
     display: flex;
-    /* Enable flex layout */
     flex-direction: column;
-    /* Stack children */
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-xl);
     animation: slideUp 0.3s ease;
@@ -749,7 +356,6 @@
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
-    /* Prevent header from shrinking */
 }
 
 .modal-header h3 {
@@ -777,7 +383,6 @@
 .modal-form {
     padding: 1.5rem;
     overflow-y: auto;
-    /* Enable scrolling for form content */
 }
 
 .form-grid {
@@ -820,7 +425,6 @@
     background: var(--bg-secondary);
     border-radius: 0 0 var(--radius-lg) var(--radius-lg);
     flex-shrink: 0;
-    /* Prevent footer from shrinking */
 }
 
 @keyframes slideUp {
@@ -835,6 +439,7 @@
     }
 }
 
+/* Responsive Design */
 @media (max-width: 640px) {
     .nav-content {
         flex-direction: column;
@@ -867,6 +472,5 @@
 
     .modal-content {
         max-height: 95vh;
-        /* More height on mobile */
     }
 }
