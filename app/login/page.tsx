@@ -106,9 +106,7 @@ export default function LoginPage() {
                         {loading ? 'Signing in...' : 'Sign In'}
                     </button>
 
-                    <div className="login-hint">
-                        <p>Default credentials: letsshopbd24@gmail.com / letsshopbd24@#@##</p>
-                    </div>
+
                 </form>
             </div>
         </div>
