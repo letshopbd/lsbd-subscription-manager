@@ -514,7 +514,7 @@
 }
 
 @keyframes spin {
-    ``` to {
+    to {
         transform: rotate(360deg);
     }
 }
