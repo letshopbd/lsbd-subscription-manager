@@ -42,7 +42,7 @@ export async function POST(request: NextRequest) {
         return response;
     } catch (error) {
         return NextResponse.json(
-            { error: 'An error occurred during login' },
+            { error: `Login Error: ${(error as Error).message}` },
             { status: 500 }
         );
     }
